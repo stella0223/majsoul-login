@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
   schedule: #5:00
    - cron: '0 21 * * *'
+  pull_request:
+    branches:
+    - pacth-1
 jobs:
   login:
     name: Majsoul-Login
